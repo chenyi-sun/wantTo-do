@@ -1,0 +1,172 @@
+1.求y和z的值是多少？
+<script type="text/javascript">
+var x = 1;
+var y = 0;
+var z = 0;
+function add(n){n=n+1;}
+y = add(x);
+function add(n){n=n+3;}
+z = add(x);
+</script>
+都为undefined，因为没有返回值。
+
+2.javascript是面向对象的，怎么体现javascript的继承关系？
+使用prototype来实现。
+
+3.javascript怎样选中一个checkbox，怎样设置它无效？
+document.all.cb1[0].disabled = true;
+
+4.form中的input可以设置为readonly和disable，请问2者有什么区别？
+readonly不可编辑，但可以选择和复制；值可以传递到后台
+disabled不能编辑，不能复制，不能选择；值不可以传递到后台
+
+5.js中的3种弹出式消息提醒（警告窗口，确认窗口，信息输入窗口）的命令式什么？
+alert
+confirm
+prompt
+
+6.form中的input有哪些类型？
+
+
+7.javaScript的2种变量范围有什么不同？
+
+全局变量：当前页面内有效
+
+局部变量：方法内有效
+
+8.列举javaScript的3种主要数据类型，2种复合数据类型和2种特殊数据类型。
+
+主要数据类型：string, boolean, number
+
+复合数据类型：function, object
+
+9.程序中捕获异常的方法？
+
+window.error
+
+try{}catch(){}finally{}
+
+10.写出函数DateDemo的返回结果，系统时间假定为今天
+
+function DateDemo(){
+
+  var d, s="今天日期是：";
+
+  d = new Date();
+
+  s += d.getMonth() + "/";
+
+  s += d.getDate() + "/";
+
+  s += d.getYear();
+
+  return s;
+
+}
+
+结果：今天日期是：7/17/2010
+
+11.写出程序运行的结果？
+
+for(i=0, j=0; i<10, j<6; i++, j++){
+
+  k = i + j;
+
+}
+
+结果：10（小心陷阱）
+
+ 
+
+12.运行的结果？
+
+function hi(){
+var a;
+alert(a);
+}
+
+结果：undefined
+
+ 
+
+13.运行的结果？
+
+function hi(){
+var a = null;
+alert(a);
+}
+
+结果：null
+
+ 
+
+14.浏览器的对象模型？
+
+window
+
+顶级对象
+
+window.alert(msg)
+
+window.prompt()
+
+window.confirm()
+
+if(window.confirm()){
+
+...
+
+}
+
+window.open()
+
+window.close()
+
+document
+
+document.write()
+
+history
+
+当用户浏览网页时，浏览器保存了一个最近所访问网页的url列表。这个列表就是用history对象表示。
+
+history.back():后退
+
+history.forward():前进
+
+history.go(n):正数表示向前，负数表示向后
+
+location
+
+表示当前打开的窗口或框架的URL信息。
+
+location.href：重定向
+
+等价于location.assign(url)
+
+location.host：类似www.163.com:80
+
+navigator
+
+表示浏览器的信息及js运行的环境
+
+navigator.cookieEnabled：该属性表示是否启用cookie
+
+screen
+
+用于显示网页的显示器的大小和颜色
+
+screen.width/screen.height：表示显示器的分辨率（总的宽度，高度）
+
+15.XMLHTTPRequest对象是什么？
+Ajax原理
+
+16.超链接的属性target的可选值：_blank, _parent, _self, _top和框架名称有什么区别？
+
+17.javascript的常用对象有哪些？
+
+String, Math, Date和Array对象
+
+18.innerHTML，innerText，outerHTML，innerText的区别？
+
+首页数据倒序

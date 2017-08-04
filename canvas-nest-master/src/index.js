@@ -24,7 +24,7 @@ class Circle {
         //arc() 方法使用一个中心点和半径，为一个画布的当前子路径添加一条弧。
         ctx.arc(this.x, this.y, this.r, 0, 360)
         ctx.closePath();
-        ctx.fillStyle = 'rgba(204, 204, 204, 0.3)';
+        ctx.fillStyle = 'rgba(214, 216, 79, 0.3)';
         ctx.fill();
     }
 

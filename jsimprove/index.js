@@ -28,6 +28,11 @@ function lakee(){
     /////////call方法把lakess的变量和方法全部继承
     this.ask = 'sss';
     this.ages = '1000';
+    this.testage = function(){
+        with(this){
+            new(2);
+        }
+    }
 }
 var people2 = new lakee();
 with(people2){
@@ -35,7 +40,8 @@ with(people2){
     console.log('=======');
     console.log(str);
 }
-
+console.log('===============');
+people2.testage();
 //switch方法,外面是闭包其中的变量外部不可读取
 var sss = (function(){
     var num = 200,
@@ -81,3 +87,12 @@ var asks2 = (function(){
 }());
 
 var menus = new asks2();
+
+//try catch尝试执行某个操作，如果有问题就报错
+try{
+    console.log('want to try');
+
+}
+catch(e){
+    console.log(e);
+}

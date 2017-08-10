@@ -173,7 +173,7 @@ function D(x){
     this.y = x+'23'+'44';
 }
 D.prototype = new A();
-// D.prototype.constructor = A;
+D.prototype.constructor =  D;
 D.prototype.dd = function(){
     console.log('dd');
 
@@ -196,3 +196,4 @@ var s = {
 var sd = new s.ss();
 console.log(sd.x);
 console.log(s.__proto__);
+

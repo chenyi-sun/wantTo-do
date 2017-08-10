@@ -25,3 +25,6 @@ console.log(obj[0].x);
 obj[0].x = 2;
 console.log(obj);
 console.log(obj[0].x);
+
+
+

@@ -7,7 +7,12 @@
             this.OS = this.getOS()||"Unknow OS";
         },
         getOS: function(){
+           
+        },
+        getBrower: function(){
 
-        }
+        },
+
     }
+    console.log();
 }())

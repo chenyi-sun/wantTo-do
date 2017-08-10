@@ -4,6 +4,10 @@
         init: function(){
             this.brower = this.getBrower().brower||"UnKnow Bower";
             this.version = this.getBrower().version||"Unknow Version";
+            this.OS = this.getOS()||"Unknow OS";
+        },
+        getOS: function(){
+
         }
     }
 }())

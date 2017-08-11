@@ -1,0 +1,36 @@
+.slider-test-witdh{
+    width: 900px;
+    height: 30px;
+    overflow: hidden;
+}
+.slider-test-witdh2{
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+}
+/*上面是测试的可以删掉*/
+
+.slider-portrait{
+    width: 960px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.slider-horizel{
+    width: 1000px;
+    height: 40px;
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    background: black;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.slider-portrait2{
+    top: 220px;
+}
+
+

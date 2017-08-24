@@ -1,30 +1,25 @@
 //** 获取类名**//
-function className(classname){
-    var array = document.getElementsByClassName(classname);
-    return array;
-}
-console.log(className('first')[0]);
+var CHENYI = function(){
+    return function(param){
 
-function addClass(item,classname){
-    var dom = item;
-    dom.className = dom.className + ' ' + classname;
+    }
+}();
+
+var hasClass = function(domObj, className){
+    if(domObj.className) {
+        return domObj.className.match(new RegExp('(\\b|^)' + className + '(\\b|$)'));
+    }else {
+        return false;
+    }
 };
 
-function hasClass(ele, classname){
-
+ function GetUrlParam(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
 }
-addClass(className('first')[0],'second');
-console.log(className('first')[0]);
-
-var obj = [{
-    x:1,
-}];
-
-console.log(obj);
-console.log(obj[0].x);
-obj[0].x = 2;
-console.log(obj);
-console.log(obj[0].x);
+console.log(GetUrlParam('ask'));
 
 
 

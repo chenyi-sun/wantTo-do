@@ -4,7 +4,7 @@ function optimized(){
 }
 optimized.prototype.func = function(){
     console.log('ssss');
-}
 
+}
 var oj = new optimized();
 oj.func();

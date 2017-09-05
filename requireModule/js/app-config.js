@@ -7,7 +7,8 @@
                  loadash: './lodash',
                  lhgdialog: './lhgdialog',
                  'ueditor.config': './js/ueditor.config',
-                 'ueditor': './js/ueditor.all'
+                 'ueditor': './js/ueditor.all',
+                 ZeroClipboard: "./js/third-party/zeroclipboard/ZeroClipboard"
                 //  ScrollMagicJquery: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.min',
                 //  TweenLite: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min',
                 //  TweenMax: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min',
